@@ -4,6 +4,8 @@
   "description": "D3 library for React",
   "main": "dist/react-d3-library.js",
   "scripts": {
+    "prepublish": "npm run build",
+    "postpublish": "git push origin master --tags",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
